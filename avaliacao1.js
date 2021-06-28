@@ -1,4 +1,4 @@
-// Saulo Assis - Turma 4
+// Saulo Assis - Turma 4 - Final
 
 
 function menu(prato, tempoPersonalizado) { 
