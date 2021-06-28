@@ -1,10 +1,11 @@
 // Saulo Assis - Turma 4
 
 
-function menu(prato, tempo) {
+function menu(prato, tempoPersonalizado) { 
+// o usuário escolhe o prato com o tempo padrão e pode adicionar ou reduzir o tempo de aquecimento
 
-    let tempoTotal = tempo
-    let temponecessario = 0
+    let tempoTotal = tempoPersonalizado // tempo de aquecimento final
+    let tempoNecessario = 0 // 
 
     let tempoPipoca = 10
     let tempoMacarrao = 8
@@ -15,37 +16,37 @@ function menu(prato, tempo) {
 
     if (prato == "Pipoca") {
         tempoTotal += tempoPipoca
-        temponecessario = 10
+        tempoNecessario = tempoPipoca
         
     } else if (prato == "Macarrão") {
         tempoTotal += tempoMacarrao
-        temponecessario = 8
+        tempoNecessario = tempoMacarrao
 
     } else if (prato == "Carne") {
         tempoTotal += tempoCarne
-        temponecessario = 15
+        tempoNecessario = tempoCarne
 
     } else if (prato == "Feijão") {
         tempoTotal += tempoFeijao
-        temponecessario = 12
+        tempoNecessario = tempoFeijao
 
     } else if (prato == "Brigadeiro") {
         tempoTotal += tempoBrigadeiro
-        temponecessario = 8
-        
+        tempoNecessario = tempoBrigadeiro
+
     } else {
         console.log("Escolha uma opção válida")
     }
 
 
 
-    if (tempoTotal >= (temponecessario * 3)) {
+    if (tempoTotal >= (tempoNecessario * 3)) {
         console.log("kabum!")
 
-    } else if (tempoTotal >= (temponecessario * 2)) {
+    } else if (tempoTotal >= (tempoNecessario * 2)) {
         console.log("A comida queimou!")
 
-    } else if (tempoTotal < temponecessario) {
+    } else if (tempoTotal < tempoNecessario) {
         console.log("Tempo insuficiente")
 
     } else {
