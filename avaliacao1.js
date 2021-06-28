@@ -16,18 +16,23 @@ function menu(prato, tempo) {
     if (prato == "Pipoca") {
         tempoTotal += tempoPipoca
         temponecessario = 10
+        
     } else if (prato == "Macarrão") {
         tempoTotal += tempoMacarrao
         temponecessario = 8
+
     } else if (prato == "Carne") {
         tempoTotal += tempoCarne
         temponecessario = 15
+
     } else if (prato == "Feijão") {
         tempoTotal += tempoFeijao
         temponecessario = 12
+
     } else if (prato == "Brigadeiro") {
         tempoTotal += tempoBrigadeiro
         temponecessario = 8
+        
     } else {
         console.log("Escolha uma opção válida")
     }
